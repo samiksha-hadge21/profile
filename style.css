@@ -1,0 +1,67 @@
+body{
+  background-image: url(https://images.unsplash.com/photo-1557682250-33bd709cbe85?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHVycGxlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#container{
+  height: 630px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, .2);
+  padding: 10px;
+  border-radius: 10px;
+}
+#pic{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+h1,h2,h3,ul,li{
+  color: #fff;
+}
+h1{
+  position: relative;
+  
+}
+h1::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;
+  bottom:0;
+  background-color:blanchedalmond;
+  left: 0;
+
+}
+h1:hover::after{
+  animation-name: line;
+  animation-duration: 2s;
+}
+@keyframes line {
+  0%{
+    width: 0;
+    left: 0;
+  }
+  50%{
+    width: 100%;
+    left: 0;
+  }
+  100%{
+    width: 0%;
+    left: 100%;
+  }
+  
+}
